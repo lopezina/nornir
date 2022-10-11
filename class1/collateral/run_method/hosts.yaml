@@ -1,0 +1,9 @@
+---
+my_host1:
+  hostname: localhost
+my_host2:
+  hostname: localhost
+my_host3:
+  hostname: localhost
+my_host4:
+  hostname: localhost

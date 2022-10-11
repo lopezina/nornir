@@ -1,0 +1,22 @@
+---
+cisco3:
+  hostname: cisco3.lasthop.io
+  groups:
+    - cisco
+  data:
+    key1: value1
+
+cisco4:
+  hostname: cisco4.lasthop.io
+  groups:
+    - cisco
+
+arista1:
+  hostname: arista1.lasthop.io
+  groups:
+    - arista
+
+srx2:
+  hostname: srx2.lasthop.io
+  groups:
+    - juniper

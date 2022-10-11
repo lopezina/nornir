@@ -1,0 +1,13 @@
+---
+platform: nxos
+connection_options:
+  netmiko:
+    platform: cisco_nxos
+    extras: {}
+  napalm:
+    port: 8443
+    extras:
+      optional_args: {}
+
+ntp_server: 1.2.3.4
+dns_server: 8.8.8.8

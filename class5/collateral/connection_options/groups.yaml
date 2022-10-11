@@ -1,0 +1,19 @@
+---
+eos:
+  platform: eos
+  port: 22
+  connection_options:
+    netmiko:
+      platform: arista_eos
+      # "insecure" user is not configured on Arista devices so testing fails
+      # username: insecure
+      # password: stillnotsecure
+      extras:
+        global_delay_factor: 2 
+        secret: verysecure
+    napalm:
+      port: 443
+      extras:
+        optional_args:
+          transport: https
+          eos_autoComplete: True

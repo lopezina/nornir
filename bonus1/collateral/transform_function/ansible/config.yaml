@@ -1,0 +1,7 @@
+inventory:
+  plugin: AnsibleInventory
+  options:
+    hostsfile: "inventory.yaml"
+
+logging:
+  enabled: False

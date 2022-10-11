@@ -1,0 +1,44 @@
+---
+ios:
+  platform: ios
+  username: test9
+  connection_options:
+    netmiko:
+      platform: cisco_ios
+      extras:
+        secret: bogus
+    napalm:
+      extras:
+        optional_args: {}
+
+nxos:
+  platform: nxos
+  connection_options:
+    netmiko:
+      platform: cisco_nxos
+    napalm:
+      port: 8443
+      extras:
+        optional_args: {}
+
+eos:
+  platform: eos
+  username: lowprivs
+  connection_options:
+    netmiko:
+      platform: arista_eos
+      extras:
+        secret: bogus
+        global_delay_factor: 1
+    napalm:
+      extras:
+        optional_args: {}
+
+junos:
+  platform: junos
+  connection_options:
+    netmiko:
+      platform: juniper_junos
+    napalm:
+      extras:
+        optional_args: {}
